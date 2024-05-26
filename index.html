@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portafolio_website/OVdesigns.css">
+    <title>OVDESIGNS</title>
+    <body background="images/Ovdesign1.jpg">
+            
+ <!-- NAVIGATION VAR -->
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+
+        </nav>
+      </div>
+</head>
+    <p>OV Web Desings</p>
+        <h1>OV Web<span></span> Design</h1>
+   <!--HOME CONTAINER-->     
+       
+         </div>
+     </div>
+ </div>
+</div>
+<!-- END OF HOME CONTAINER-->
+           
+        <!-- about container-->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2">
+                        <img src="images/OVdesign3.png" width="300" height="300">
+                    </div>
+                    <div class="about-col-3">
+                        <h1 class="sub-title">About me</h1>
+                       <p>Hello my name is Roque Villanueva, I have been studying web designing for nine (9) months,<br>
+                            I am very ambitious-hardworking individual, that enjoy designing tech<br>
+                            digital websites products.
+                            Please click on the link bellow to see all the projects that I have created.</p> 
+                            <div class="tab-titles">
+                               <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                               <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                               <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                  <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                                  <li><span>Web Development</span><br>Web Deveplpments</li>
+                                </ul>
+                              </div>
+
+                            <div class="tab-contents" id="experience">
+                              <ul>
+                                <li><span>2023-2024</span><br>Created my own portfolio website</li>
+                                <li><span>Created Projects for School</span><br>Created My own Website</li>
+                              </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                  <li><span>2023/2024</span><br>Studying Designing Web at AOLCC</li>
+                                  <li><span>Basic JavaScript, Html, Css and Boostrap</span><br>Basic Htmil, Css and Boostrap</li>
+                                </ul>
+                            </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END OF ABOOUT-->
+
+        <!--SERVICES -->
+        <div id="home">
+            <div class="container">
+                <h1 class="sub-title">Home</h1> 
+                <div class="home list">
+                    <div>
+                        <i class="fa-solid fa-rectangle-code"></i>
+                        <h2>Web Design</h2>
+                        <h3>Web designing is the process of planning, conceptualizing,<br>
+                            and implementing the plan for designing a website in a way<br> that is 
+                           functional and offers a good user experience.</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work!</h1> 
+                <div class="workl-ist">
+                    <img src="images/OVdesign2.jpg" width="300" height="300">
+                    <div class="layer">
+                        <h3>Github</h3>
+                        <p>Please click the link below to see my portfolio website.</p>
+                        <a href="https://github.com/Rocvio01?tab=repositories">My html/css projects!</a>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--CONTACT INFORMATION -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                  <div class="contact-left">
+                  <h1 class="sub-title">contact me</h1>
+                  <p>roke04@live.com</p>
+                  <p>250-800-9671</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contact-right">
+            <form>
+               <input type="text" name="Name" placeholder="Your Name" required>
+               <input type="email" name="email" placeholder="Your Email" required>     
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn2">Submit</button>
+            </form>
+         </div> 
+         <div class="copyright">
+            <P>ovwebdesigns.ca  &nbsp; |&nbsp; &copy; 2024</P>
+        </div>
+        </div>
+    </div>  
+
+        
+   
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+           for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+           
+        }
+        for(tabcontents of tabcontents){
+            tabcontents.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+         
+    
+
+</body>
+</html>

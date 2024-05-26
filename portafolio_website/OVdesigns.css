@@ -1,0 +1,285 @@
+
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4 {
+    font-family: 'Open Sans',sans-serif;
+}
+h1 {
+    line-height: 5-px;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 2px 3px rgba(0,0,0,5);
+
+}
+
+h2 {
+    line-height: 5-px;
+    color: white;
+}
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+    line-height: 40px;
+}
+
+p {
+    color: white;
+    font-weight: 900;
+    font-size: large;
+}
+
+.text center {
+    text-align: center;
+}
+
+
+.form {
+    padding: 30px 39px;
+    color: orange;
+}
+
+body {
+    margin: 0px;
+    
+}
+
+#
+
+.main {
+    margin: 20px;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    padding: 15px;
+    overflow: hidden;
+    
+}
+
+
+.navbar a{
+    color: orange;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li{
+    float: left;
+    bottom: -6px;
+
+}
+
+.navbar a:hover{
+    background-color: lightgray;
+    transition: ;
+}
+footer {
+    color: black
+}
+ 
+/* ABOUT */
+#about {
+    padding: 80px 0;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bout-col-1 img {
+    flex-basis: 35%;
+
+}
+.bout-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.bout-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: orange;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::afte {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: lightblue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+tab-links.active-link::after {
+    width: 50%;
+}
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    text-align: left;
+}
+.tab-contents ul li span {
+    color: lightblue;
+    font-size: 14px;
+}  
+
+.tab-contents{
+   display: none; 
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* SERVICES */
+#services {
+    padding: 30px;
+}
+.services-list {
+   display: grid; 
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+
+}
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,trnasform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+} 
+
+/*portfolio*/
+#portfolio {
+    padding: 50px 0;
+}
+.work-list {
+    display: grid; 
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+}
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block; 
+    transition: transform0.5s;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+/*CONTACT*/
+
+.contact-left {
+    flex-basis: 35%;
+    
+
+}
+.contact-right {
+    flex-basis: 30%;
+}
+.contact-left p {
+    margin-top: 30px;
+
+}
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn.btn2 {
+    display: inline-block;
+    background: black;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: orange;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: black;
+    font-weight: 300;
+    margin-top: 20px;
+    
+}
+ /* css for small screen*/
+ 318 @media only screen and (max-width: 600px) {
+
+ }
